@@ -12,5 +12,5 @@ INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg, s
     ('Squirtle', '1993-04-02', 3, false, -12.13, '');
     ('Angemon', '2005-06-12', 1, true, -45, '');
     ('Boarmon', '2005-06-07', 7, true, 20.4, '');
-    ('Blossom', '1998-09-13', 3, true, 17, '');
+    ('Blossom', '1998-10-13', 3, true, 17, '');
     ('Ditto', '2022-05-14', 4, true, 22, '');
