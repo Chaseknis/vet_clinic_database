@@ -78,3 +78,17 @@ SELECT species, AVG(escape_attempts) as avg_escapes
 FROM animals 
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-01-01' 
 GROUP BY species;
+
+SELECT * FROM public.animals
+ORDER BY id ASC
+
+BEGIN;
+UPDATE animals SET date_of_birth = '1998-10-13' WHERE date_of_birth = '1998-09-13';
+COMMIT;
+
+SELECT species, AVG(escape_attempts) 
+FROM animals
+WHERE date_of_birth >= '1990/01/01' AND date_of_birth <= '2000/12/31'
+GROUP BY species;
+
+SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
